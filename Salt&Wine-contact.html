@@ -36,12 +36,6 @@
         background-color: white;
         font-family: "Josefin Sans", sans-serif;
       }
-      .btn {
-        background-color: #ac7838;
-      }
-      .btn:hover {
-        background-color: #716453;
-      }
       #footer-section {
         background-color: #716453;
       }
@@ -49,9 +43,38 @@
         width: 30px;
         height: 30px;
       }
-    </style>
+      .btn {
+        background-color: #ac7838;
+      }
+      .btn:hover {
+        background-color: #716453;
+      }
+      #fb-link {
+        text-decoration: none;
+      }
+      .map-responsive {
+        overflow: hidden;
 
-    <title>Salt & Wine | Menu</title>
+        padding-bottom: 56.25%;
+
+        position: relative;
+
+        height: 0;
+      }
+
+      .map-responsive iframe {
+        left: 0;
+
+        top: 0;
+
+        height: 100%;
+
+        width: 100%;
+
+        position: absolute;
+      }
+    </style>
+    <title>Salt & Wine | Contact</title>
   </head>
   <body>
     <!-- Nav bar section -->
@@ -72,25 +95,25 @@
         <div class="collapse navbar-collapse" id="site_navbar">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item fs-2">
-              <a class="nav-link active text-light" href="mp1-home.html"
-                >Home</a
-              >
+              <a class="nav-link active text-light" href="index.html">Home</a>
             </li>
 
             <li class="nav-item fs-2">
-              <a class="nav-link active text-light" href="mp1-menu.html"
+              <a class="nav-link active text-light" href="Salt&Wine-menu.html"
                 >Menu</a
               >
             </li>
 
             <li class="nav-item fs-2">
-              <a class="nav-link active text-light" href="mp1-contact.html"
+              <a
+                class="nav-link active text-light"
+                href="Salt&Wine-contact.html"
                 >Contact us</a
               >
             </li>
 
             <li class="nav-item fs-2">
-              <a class="nav-link active text-light" href="mp1-about.html"
+              <a class="nav-link active text-light" href="Salt&Wine-about.html"
                 >About us</a
               >
             </li>
@@ -98,7 +121,9 @@
           <div>
             <ul class="navbar-nav ml-auto">
               <li class="nav-item fs-5">
-                <a class="nav-link active text-light" href="mp1-contact.html"
+                <a
+                  class="nav-link active text-light"
+                  href="Salt&Wine-contact.html"
                   >Order in Advance</a
                 >
               </li>
@@ -108,66 +133,66 @@
       </div>
     </nav>
 
-    <!-- Body-content Section -->
+    <!-- Body Content Section -->
+    <div class="container">
+      <h1 class="display-1 text-center text-black mt-5">
+        Get in Touch with us for advance orders!
+      </h1>
+    </div>
+
     <div class="container mt-5">
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-6">
           <img
-            src="MPG-img/ricemeals.png"
-            alt="Ricemeals-menu"
+            src="MPG-img/contact-pic.jpg"
+            alt="red telephone pic"
             class="img-fluid rounded-4"
           />
-        </div>
-        <div class="col-lg-8 text-black fs-4">
-          <p>
-            Indulge in the exquisite flavors of our tantalizing Nasi Goreng, a
-            symphony of perfectly seasoned rice and savory spices. A culinary
-            journey that delights your taste buds!
+          <h1 class="text-center mt-3">Get in touch with us via phone</h1>
+          <p class="fs-4 text-center">
+            +639279367404 | vergilsalvino@gmail.com
           </p>
-          <a href="mp1-contact.html" class="btn text-light fs-4">Contact us</a>
+        </div>
+        <div class="col-lg-6">
+          <img
+            src="MPG-img/contact-pic-1.jpg"
+            alt="Cellphone pic"
+            class="img-fluid rounded-4"
+          />
+          <h1 class="text-center mt-3">Direct message us on our main page</h1>
+          <div>
+            <p class="text-center fs-4">
+              Ger in touch with us via our direct
+              <a
+                href="https://www.facebook.com/people/Salt-and-Wine-PH/100075519327971/"
+                target="_blank"
+                id="fb-link"
+                >Facebook</a
+              >
+              page to book your reservations!
+            </p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-lg-4">
-          <img
-            src="MPG-img/sandwiches.png"
-            alt="Sanwiches-menu"
-            class="img-fluid rounded-4"
-          />
-        </div>
-        <div class="col-lg-8 text-black fs-4">
-          <p>
-            Savor the boldness with our All Beef Burger and Spicy Ayam Sandwich.
-            Juicy, succulent beef meets fiery, flavorful chicken— a
-            mouthwatering duo that promises an explosion of taste in every bite!
-          </p>
-          <a href="mp1-contact.html" class="btn text-light fs-4">Contact us</a>
-        </div>
+    <!-- Map Section -->
+    <h1 class="text-center mt-5">Our Location for Walk-in Customers</h1>
+    <div class="container">
+      <div class="map-responsive">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d966.8732692183684!2d120.96835326962339!3d14.224434299126225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd798b711d8a83%3A0xbda6a4611e94a74c!2sSalt%20%26%20Wine%20Restaurant!5e0!3m2!1sen!2sph!4v1700901591738!5m2!1sen!2sph"
+          width="1200"
+          height="350"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </div>
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-lg-4">
-          <img
-            src="MPG-img/addons.png"
-            alt="add-on-menu"
-            class="img-fluid rounded-4"
-          />
-        </div>
-        <div class="col-lg-8 text-black fs-4">
-          <p>
-            Elevate your culinary experience with our irresistible Add-On Menu!
-            Spice it up with extra sambal, savor the crunch of extra chips,
-            relish in more babi popiyah, and indulge in extra Nasi Goreng—pure
-            gastronomic delight!
-          </p>
-          <a href="mp1-contact.html" class="btn text-light fs-4">Contact us</a>
-        </div>
-      </div>
-    </div>
-    <!-- Footer section -->
+
+    <!-- Footer Section -->
+
     <footer>
       <div id="footer-section">
         <div class="container mt-5">
